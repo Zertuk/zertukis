@@ -1,0 +1,58 @@
+::selection {
+	background: #313131; /* Safari */
+	color: white;
+	}
+::-moz-selection {
+	background: #313131; /* Firefox */
+	color: white;
+}
+
+
+body {
+	background-color: #e0e0e0;
+	max-height: 100%;
+}
+
+p {
+	text-align: center;
+	font-size: 20px;
+	font-family: 'Nova Square', cursive;
+
+}
+
+#name {
+	font-size: 38px;
+	color: #313131;
+	margin-top: 50px;
+	margin-bottom: 25px;
+}
+
+#subdomains {
+	margin-top: 0px;
+	color: #313131;
+}
+
+a {
+	text-decoration: none;
+	color: #035985;
+}
+
+.about {
+	display: inline;
+	font-size: 24px;
+}
+
+#wrapper {
+	background-color: #fafafa;
+	padding: 20px;
+	width: 280px;
+	margin: 0 auto;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	border: 2px solid #035985;
+	border-radius: 10px;
+}
+
+#loading {
+	display: none;
+}
