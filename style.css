@@ -37,6 +37,10 @@ a {
 	color: #035985;
 }
 
+a:hover {
+	color: orange;
+}
+
 .about {
 	display: inline;
 	font-size: 24px;
