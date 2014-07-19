@@ -5,7 +5,9 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 body, html {
 	height: 100%;
 	font-family: 'Dosis', sans-serif;
+	background-color: #ED872D;
 }
+
 
 .main_icon {
 	font-size: 3em;
@@ -25,20 +27,51 @@ body, html {
 
 .project_info {
 	font-style: italic;
+	font-size: 1em;
+	margin-left: 2.5%;
+	padding-top: 0.5%;
+}
+
+.project_description {
+	width: 44%;
+	float: left;
+	margin: 2.5%;
+}
+
+.project_header {
+	margin-left: 2.5%;
+	font-size: 2.5em;
+}
+
+.text_header {
+	text-align: center;
+	padding-bottom: 3%;
+}
+.live {
+	display: inline;
 }
 
 #head_wrapper {
 	height: 100%;
-	background-color: #ED872D;
 }
 
 #projects_wrapper {
 	height: 100%;
+	color: white;
 }
 
+.project {
+	padding-top: 5%;
+	margin-left: 5%;
+	margin-right: 5%;
+}
 #head {
 	color: white;
 	text-align: center;
+}
+.project_tech {
+	margin-left: 2.5%;
+	padding-top: 0.25%;
 }
 
 h1 {
@@ -50,7 +83,33 @@ h2 {
 	font-size: 2em;
 }
 
+img {
+	width: 35%;
+	float: right;
+	padding: 0.25%;
+	margin-top: -10%
+}
+
+footer {
+	height: 50px;
+	color: white;
+	background-color: black;
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+}
+
 #down {
 	padding-top: 15%;
 	font-size: 3em;
+}
+
+.project_icon {
+	font-size: 2em;
+	padding: 0.5%;
+	padding-top: 1%;
+}
+
+.icon_wrap {
+	margin-left: 2%;
 }
