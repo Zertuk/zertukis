@@ -4,8 +4,19 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 body, html {
 	height: 100%;
-font-family: 'Dosis', sans-serif;
+	font-family: 'Dosis', sans-serif;
 }
+
+.main_icon {
+	font-size: 3em;
+	margin: 10px;
+	color: grey;
+}
+
+.main_icon:hover {
+	color: white;
+}
+
 
 .wrapper {
 	max-width: 100%;
@@ -21,18 +32,25 @@ font-family: 'Dosis', sans-serif;
 	background-color: #ED872D;
 }
 
+#projects_wrapper {
+	height: 100%;
+}
+
 #head {
 	color: white;
 	text-align: center;
 }
 
 h1 {
+	padding-top: 15%;
 	font-size: 5em;
 }
 h2 {
+	padding-top: 1%;
 	font-size: 2em;
 }
 
 #down {
-	float: bottom;
+	padding-top: 15%;
+	font-size: 3em;
 }
