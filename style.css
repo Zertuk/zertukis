@@ -9,6 +9,10 @@ body, html {
 }
 
 
+#imgur {
+	display: none;
+}
+
 .main_icon {
 	font-size: 3em;
 	margin: 10px;
