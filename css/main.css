@@ -101,6 +101,7 @@ body, html {
     height: 100%;
     background-color: #ED872D;
     color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
 }
 
 img {
@@ -129,15 +130,22 @@ button {
 
 #introName {
     margin-top: 20%;
+    font-size: 5rem;
+    margin-bottom: 2%;
 }
 .introAnchor {
     font-size: 3rem;
-    margin-right: 10px;
-    margin-left: 10px;
+    margin-right: 1%;
+    margin-left: 1%;
+    color: white;
+    float: bottom;
 }
 
 #introDownArrow {
     display: block;
+    color: white;
+    margin-top: 5%;
+    font-size: 4rem;
 }
 
 
