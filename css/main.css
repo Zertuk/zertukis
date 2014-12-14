@@ -97,8 +97,20 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+body {
+    background-color: #ED872D;
+    color: #FFFFFF;
+}
 
+img {
+    max-width: 100%;
+}
 
+button {
+    color: black;
+    background-color: white;
+    border-color: black;
+}
 
 
 
