@@ -170,7 +170,8 @@ footer, .wrapper:after {
     height: 100%;
     margin-bottom: 5%;
     background-color: white;
-    padding: 2%;
+    padding: 2% 2% 0% 2%;
+
     border-radius: 5px;
 }
 
