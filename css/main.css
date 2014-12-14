@@ -110,10 +110,7 @@ img {
 }
 
 button {
-    color: black;
-    background-color: white;
-    border-color: black;
-    margin-top: 10%;
+    margin-top: 5%;
 }
 
 .wrapper {
@@ -130,12 +127,6 @@ button {
 footer, .wrapper:after {
     height: 142px;
 }
-
-
-.test {
-    height: 100%;
-}
-
 
 #intro {
     text-align: center;
@@ -178,6 +169,9 @@ footer, .wrapper:after {
 .project {
     height: 100%;
     margin-bottom: 5%;
+    background-color: white;
+    padding: 2%;
+    border-radius: 5px;
 }
 
 .row {
