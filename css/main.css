@@ -126,6 +126,12 @@ button {
 
 footer, .wrapper:after {
     height: 142px;
+    font-size: 0.75rem;
+    text-align: center;
+}
+
+footer a {
+    color: white;
 }
 
 #intro {
