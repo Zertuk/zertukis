@@ -148,6 +148,55 @@ button {
     font-size: 4rem;
 }
 
+#projectWrapper {
+    height: 100%;
+}
+
+.project {
+    height: 100%;
+}
+
+.row {
+    margin: 0%;
+    margin-bottom: 3%;
+}
+
+.projectInfo {
+
+}
+
+.projectHeader {
+    font-size: 2.5rem;
+    margin: 0%;
+}
+
+.projectTags {
+    margin: 0%;
+    margin-bottom: 2%;
+}
+
+.projectTech {
+    margin: 0%;
+    margin-bottom: 5%;
+}
+
+.projectImage {
+}
+
+.projectText {
+
+}
+
+.projectTextHeader {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.projectTextParagraph {
+    font-size: 1rem;
+}
+
+
 
 
 
