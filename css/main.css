@@ -164,7 +164,7 @@ footer, .wrapper:after {
 #projectWrapper {
     margin-top: 5%;
     padding-top: 2%;
-    padding-bottom: 5%;
+    padding-bottom: 2%;
     height: 100%;
     background-color: #f1f1f0;
     color: black;
@@ -177,15 +177,12 @@ footer, .wrapper:after {
 
 .project {
     height: 100%;
+    margin-bottom: 5%;
 }
 
 .row {
     margin: 0%;
     margin-bottom: 3%;
-}
-
-.projectInfo {
-
 }
 
 .projectHeader {
