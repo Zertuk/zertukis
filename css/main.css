@@ -97,7 +97,8 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-body {
+body, html {
+    height: 100%;
     background-color: #ED872D;
     color: #FFFFFF;
 }
@@ -110,6 +111,33 @@ button {
     color: black;
     background-color: white;
     border-color: black;
+}
+
+.wrapper {
+    max-width: 100%;
+    height: 100%;
+}
+
+.test {
+    height: 100%;
+}
+
+
+#intro {
+    text-align: center;
+}
+
+#introName {
+    margin-top: 20%;
+}
+.introAnchor {
+    font-size: 3rem;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+#introDownArrow {
+    display: block;
 }
 
 
