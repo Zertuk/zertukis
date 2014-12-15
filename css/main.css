@@ -104,6 +104,16 @@ body, html {
     font-family: 'Montserrat', sans-serif;
 }
 
+::selection {
+    background: #0C9DB8;
+    color: white;
+}
+
+::-moz-selection {
+    background: #0C9DB8;
+    color: white;
+}
+
 img {
     max-width: 100%;
     border: 1px solid grey;
@@ -112,8 +122,12 @@ img {
 button {
     background-color: white;
     color: black;
-    margin-top: 30%;
-    opacity: 1;
+    margin-top: 25%;
+}
+
+button:active {
+    background-color: #0C9DB8;
+    color: white;
 }
 
 
@@ -144,9 +158,10 @@ a:hover {
 
 .projectImageButtons:hover {
     background-color: rgba(237,135,45, 0.8);
-    transition: background-color 0.5s linear;
-
+    border-right: 1px solid rgba(237,135,45, 0.8);
+    transition: background-color 0.2s linear;
 }
+
 .wrapper {
     max-width: 100%;
     min-height: 100%;
@@ -228,6 +243,7 @@ footer a {
 .projectHeader {
     font-size: 2.5rem;
     margin-top: 0%;
+    margin-bottom: 1%;
 }
 
 .projectTags {
