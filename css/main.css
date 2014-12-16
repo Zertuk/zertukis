@@ -274,6 +274,26 @@ footer a {
 }
 
 
+/*image gallery*/
+
+
+.galleryChoice {
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    color: black;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+.default {
+    background-color: #ED872D;
+    color: white;
+}
+
 
 
 
