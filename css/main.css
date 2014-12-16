@@ -276,6 +276,10 @@ footer a {
 
 /*image gallery*/
 
+.gallery {
+    height: 300px;
+    max-width: 100%;
+}
 
 .galleryChoice {
     text-align: center;
