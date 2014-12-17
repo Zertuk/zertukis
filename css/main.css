@@ -122,10 +122,16 @@ img {
 button {
     background-color: white;
     color: black;
-    margin-top: 25%;
+    height: 42px;
+    border: 1px solid black;
+    border-radius: 0px;
+    margin-top: 5px;
+    margin-left: 5px;
+    float: right;
+    font-size: 1.5rem;
 }
 
-button:active {
+button:active, button:hover {
     background-color: #0C9DB8;
     color: white;
 }
@@ -137,6 +143,7 @@ a:hover {
 
 .projectImageWrap {
     position: relative;
+    text-align: center;
 }
 
 .projectImageWrap:hover .projectImageButtons {
@@ -257,6 +264,7 @@ footer a {
 }
 
 .projectImage {
+    width: 100%;
 }
 
 .projectText {
@@ -277,15 +285,18 @@ footer a {
 /*image gallery*/
 
 .gallery {
-    height: 300px;
+    height: 280px;
     max-width: 100%;
 }
 
 .galleryChoice {
+    font-size: 1.5rem;
     text-align: center;
     width: 40px;
     height: 40px;
-    margin: 5px;
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
     color: black;
     display: inline-block;
     text-decoration: none;
