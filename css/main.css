@@ -122,16 +122,21 @@ img {
 button {
     background-color: white;
     color: black;
-    height: 42px;
+    height: 40px;
     border: 1px solid black;
     border-radius: 0px;
     margin-top: 5px;
     margin-left: 5px;
-    float: right;
-    font-size: 1.5rem;
+    margin-right: 5px;
+    font-size: 1.25rem;
 }
 
-button:active, button:hover {
+.galleryAnchorButton {
+    width: 100px;
+    float: right;
+}
+
+.galleryAnchorButton:hover {
     background-color: #0C9DB8;
     color: white;
 }
@@ -290,15 +295,9 @@ footer a {
 }
 
 .galleryChoice {
-    font-size: 1.5rem;
-    text-align: center;
     width: 40px;
     height: 40px;
-    margin-top: 5px;
-    margin-right: 5px;
-    margin-left: 5px;
-    color: black;
-    display: inline-block;
+    display: inline;
     text-decoration: none;
     cursor: pointer;
     border: 1px solid black;
