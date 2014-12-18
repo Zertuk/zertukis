@@ -28,9 +28,20 @@ $(document).ready(function() {
 		gallery = $(this).parent().prev().find('img.gallery');
 		function imageSwitch(index) {
 			$(gallery).hide();
-			$(gallery).attr("src", images[index]);
+			$(gallery).attr('src', images[index]);
+			$(gallery).attr('value', images[index]);
 			$(gallery).fadeIn();
 		}
 		imageSwitch(galleryIndex);
 	})
 });
+
+$('.gallery').click(function() {
+	$('#projectLightbox').fadeIn('fast');
+	var	lightboxImage = $(this).attr('value');
+	$('#projectLightboxImage').attr('src', lightboxImage);
+});
+
+$('#projectLightboxExit').click(function() {
+	$('#projectLightbox').hide();
+})

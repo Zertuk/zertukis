@@ -308,7 +308,25 @@ footer a {
     color: white;
 }
 
+#projectLightbox {
+    display: none;
+    top: 0;
+    left: 0;
+    background-color: rgb(39,40,34);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+}
 
+#projectLightboxExit {
+    top: 5;
+    left: 5;
+}
+#projectLightboxImage {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
 
 
 
