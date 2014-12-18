@@ -312,20 +312,27 @@ footer a {
     display: none;
     top: 0;
     left: 0;
-    background-color: rgb(39,40,34);
+    background-color: rgba(39,40,34,0.8);
     height: 100%;
     width: 100%;
     position: fixed;
+    text-align: center;
+    font: 0/0 a;
 }
 
-#projectLightboxExit {
-    top: 5;
-    left: 5;
+/* vertical center the lightbox image with pseudo element */
+#projectLightbox:before {
+    content: ' ';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
 }
+
 #projectLightboxImage {
-    width: 80%;
-    display: block;
-    margin: 0 auto;
+    max-width: 90%;
+    max-height: 90%;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 
