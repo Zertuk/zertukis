@@ -115,7 +115,6 @@ body, html {
 }
 
 img {
-    max-width: 100%;
     border: 1px solid grey;
 }
 
@@ -291,7 +290,7 @@ footer a {
 /*image gallery*/
 
 .gallery {
-    height: 280px;
+    height: 100%;
     max-width: 100%;
 }
 
@@ -336,7 +335,9 @@ footer a {
     vertical-align: middle;
 }
 
-
+.galleryAnchorWrap {
+    display: inline;
+}
 
 
 
@@ -451,9 +452,34 @@ footer a {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+@media only screen and (max-width: 1000px) {
 
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+    .projectImage {
+        display: inline-block;
+    }
+}
+
+
+@media only screen and (max-width: 550px) {
+        .galleryAnchorWrap {
+        display: inline-block;
+    }
+    .galleryChoiceWrap {
+        text-align: center;
+    }
+    .projectTech {
+        font-size: 1rem;
+    }
+    .projectTextParagraph {
+        margin-top: 10%;
+    }
+    .galleryAnchorWrap {
+        display: inline-block;
+        float: none;
+    }
+    .galleryChoiceWrap {
+        text-align: center;
+    }
 }
 
 @media print,
