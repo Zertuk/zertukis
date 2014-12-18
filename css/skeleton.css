@@ -46,7 +46,7 @@
   margin-left: 0; }
 
 /* For devices larger than 550px */
-@media (min-width: 768px) {
+@media (min-width: 960px) {
   
   .container .column,
   .container .columns {
