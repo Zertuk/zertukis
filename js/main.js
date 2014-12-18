@@ -13,9 +13,13 @@ $(document).ready(function() {
 var images = new Array();
 var gallery;
 
+images[0] = "img/leaguestatsone.png";
+images[1] = "img/leaguestatstwo.png";
 images[3] = "img/spacelichone.png";
 images[4] = "img/spacelichtwo.png";
 images[5] = "img/spacelichthree.png";
+images[6] = "img/imgurgalleryone.png";
+images[7] = "img/imgurgallerytwo.png";
 
 $(document).ready(function() {
 	$('.galleryChoice').click(function() {
@@ -42,6 +46,6 @@ $('.gallery').click(function() {
 	$('#projectLightboxImage').attr('src', lightboxImage);
 });
 
-$('#projectLightboxExit').click(function() {
+$('#projectLightbox').click(function() {
 	$('#projectLightbox').hide();
 })
