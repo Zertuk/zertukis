@@ -27,14 +27,16 @@
 
         <div class = "wrapper">
                 <div id = "intro" class = "container">
-                    <h1 id = "introName">Justin Forcier</h1>
-                    <h3 id = "introInfo">Front End Developer</h3>
+                    <div id = "introWrap">
+                        <h1 id = "introName">Justin Forcier</h1>
+                        <h3 id = "introInfo">Front End Developer</h3>
 
-                    <a target = "_blank" class = "introAnchor" href = "https://github.com/Zertuk"><i title = "GitHub" class = "fa fa-github main_icon"></i></a>
-                    <a target = "_blank" class = "introAnchor" href = "https://twitter.com/Zertuk"><i title = "Twitter" class = "fa fa-twitter main_icon"></i></a>
-                    <a class = "introAnchor" href = "mailto:justinforcier@zertukis.com"><i title = "Contact Me!" class = "fa fa-envelope main_icon"></i></a>
-                    <br>
-                    <i id = "introDownArrow" class = "fa fa-arrow-circle-down" title = "Projects"></i>
+                        <a target = "_blank" class = "introAnchor" href = "https://github.com/Zertuk"><i title = "GitHub" class = "fa fa-github main_icon"></i></a>
+                        <a target = "_blank" class = "introAnchor" href = "https://twitter.com/Zertuk"><i title = "Twitter" class = "fa fa-twitter main_icon"></i></a>
+                        <a class = "introAnchor" href = "mailto:justinforcier@zertukis.com"><i title = "Contact Me!" class = "fa fa-envelope main_icon"></i></a>
+                        <br>
+                        <i id = "introDownArrow" class = "fa fa-arrow-circle-down" title = "Projects"></i>
+                    </div>
                 </div><!--intro-->
            <div id = "projectWrapper">
                 <h1 class = "projectTitle">Projects</h1>
@@ -106,7 +108,10 @@
                             <h5 class = "projectTags">Web App</h5>
                             <h5 class = "projectTech">AngularJS, HTML5, CSS3, Bootstrap</h5>
                             <p class = "projectTextParagraph">
-                                The motivation for Imgur Gallery came from wanting to easily view all the images from a subreddit.  I also used this as an oppurtunity to learn Angular.  I used Yeoman to scaffold the app and also used the project to familiarize myself with Grunt and Bower.  
+                                The motivation for Imgur Gallery came from wanting to easily view all the images from a subreddit.  I also used this as an oppurtunity to learn Angular.  I used Yeoman to scaffold the app and also used the project to familiarize myself with Grunt and Bower.
+                            </p>
+                            <p class = "projectTextParagraph">
+                                When the user selects the subreddit they want to search a call to the Imgur API is made which brings back the images, which are then displayed using ng-repeat.
                             </p>
                         </div><!--projectInfo-->
                         <div class = "projectImage six columns">
