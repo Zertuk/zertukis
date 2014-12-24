@@ -350,16 +350,7 @@ footer a {
     display: inline;
 }
 
-
-
-
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
 @media only screen and (max-width: 1000px) {
-
     .projectImage {
         display: inline-block;
         margin-top: 2%;
@@ -368,7 +359,7 @@ footer a {
 
 
 @media only screen and (max-width: 550px) {
-        .galleryAnchorWrap {
+    .galleryAnchorWrap {
         display: inline-block;
     }
     .galleryChoiceWrap {
@@ -389,7 +380,7 @@ footer a {
     }
 }
 
-@media print,
+@media print ,
        (-o-min-device-pixel-ratio: 5/4),
        (-webkit-min-device-pixel-ratio: 1.25),
        (min-resolution: 120dpi) {
