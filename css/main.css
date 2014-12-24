@@ -119,7 +119,7 @@ img {
 }
 
 button {
-    background-color: white;
+    background-color: #F1F1F0;
     color: black;
     height: 40px;
     border: 1px solid black;
@@ -129,6 +129,7 @@ button {
     margin-right: 5px;
     font-size: 1.25rem;
     padding: 0px;
+    border-radius: 5px;
 }
 
 .galleryAnchorButton {
