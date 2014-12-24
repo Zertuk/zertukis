@@ -22,8 +22,12 @@ images[6] = "img/imgurgalleryone";
 images[7] = "img/imgurgallerytwo";
 
 $(document).ready(function() {
+	var galleryClickActive = false;
 	$('.galleryChoice').click(function() {
-
+		if (galleryClickActive == true) {
+			return;
+		}
+		galleryClickActive = true;
 		//switches active button
 		var galleryIndex = $(this).attr('value');
 		$(this).siblings().removeClass('default');
@@ -31,13 +35,16 @@ $(document).ready(function() {
 
 		//switches active gallery image/lightbox
 		gallery = $(this).parent().prev().find('img.gallery');
+
+		imageSwitch(galleryIndex);
 		function imageSwitch(index) {
 			$(gallery).attr('src', images[index] + 'small.png');
 			$(gallery).attr('value', images[index] + '.png');
 			$(gallery).hide();
 			$(gallery).fadeIn();
+			//prevents spamming clicks breaking gallery
+			window.setTimeout(function() {galleryClickActive = false}, 400);
 		}
-		imageSwitch(galleryIndex);
 	})
 });
 
