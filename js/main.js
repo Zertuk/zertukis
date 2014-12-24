@@ -23,12 +23,13 @@ images[7] = "img/imgurgallerytwo";
 
 $(document).ready(function() {
 	$('.galleryChoice').click(function() {
-		var galleryIndex = $(this).attr('value');
-		$('.galleryChoice').css('background-color', 'white');
-		$('.galleryChoice').css('color', 'black');
-		$(this).css('background-color', '#ED872D');
-		$(this).css('color', 'white');
 
+		//switches active button
+		var galleryIndex = $(this).attr('value');
+		$(this).siblings().removeClass('default');
+		$(this).addClass('default');
+
+		//switches active gallery image/lightbox
 		gallery = $(this).parent().prev().find('img.gallery');
 		function imageSwitch(index) {
 			$(gallery).attr('src', images[index] + 'small.png');
@@ -40,6 +41,7 @@ $(document).ready(function() {
 	})
 });
 
+//lightbox
 $('.gallery').click(function() {
 	$('#projectLightbox').fadeIn('fast');
 	var	lightboxImage = $(this).attr('value');
