@@ -19,9 +19,10 @@ textarea {
 }
 
 html {
-    font-size: 1em;
+    font-size: 100%;
     line-height: 1.4;
 }
+
 
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
@@ -30,13 +31,15 @@ html {
  */
 
 ::-moz-selection {
-    background: #b3d4fc;
+    background: #0C9DB8;
     text-shadow: none;
+    color: white;
 }
 
 ::selection {
-    background: #b3d4fc;
+    background: #0C9DB8;
     text-shadow: none;
+    color: white;
 }
 
 /*
@@ -102,16 +105,6 @@ body, html {
     background-color: #ED872D;
     color: #FFFFFF;
     font-family: 'Montserrat', sans-serif;
-}
-
-::selection {
-    background: #0C9DB8;
-    color: white;
-}
-
-::-moz-selection {
-    background: #0C9DB8;
-    color: white;
 }
 
 img {
