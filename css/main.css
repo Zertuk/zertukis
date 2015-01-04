@@ -108,25 +108,23 @@ body, html {
 }
 
 img {
-    border: 1px solid grey;
+    border: 1px solid #c2c2c2;
 }
 
 button {
     background-color: #F1F1F0;
-    color: black;
     height: 40px;
-    border: 1px solid black;
-    border-radius: 0px;
     margin-top: 5px;
-    margin-left: 5px;
-    margin-right: 5px;
-    font-size: 1.25rem;
+    font-size: 1rem;
+    font-weight: 1;
     padding: 0px;
     border-radius: 5px;
 }
 
 .galleryAnchorButton {
     width: 100px;
+    margin-left: 7px;
+    margin-right: -2px;
     float: right;
 }
 
@@ -239,7 +237,8 @@ footer a {
     padding-bottom: 2%;
     height: 100%;
     background-color: #f1f1f0;
-    color: black;
+    color: #4d4d4d;
+
 }
 
 .projectTitle {
@@ -282,10 +281,6 @@ footer a {
     height: 100%;
 }
 
-.projectText {
-
-}
-
 .projectTextHeader {
     text-align: center;
     font-size: 2rem;
@@ -308,10 +303,10 @@ footer a {
 .galleryChoice {
     width: 40px;
     height: 40px;
+    margin-left: 0px;
     display: inline;
     text-decoration: none;
     cursor: pointer;
-    border: 1px solid black;
 }
 
 .default {
@@ -374,6 +369,10 @@ footer a {
     .galleryAnchorWrap {
         display: inline-block;
         float: none;
+    }
+    .galleryAnchorButton {
+        margin-right: 2.5px;
+        margin-left: 2.5px;
     }
     .galleryChoiceWrap {
         text-align: center;
