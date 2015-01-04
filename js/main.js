@@ -1,33 +1,31 @@
 $(document).ready(function() {
+	//scroll animation
 	$('#introDownArrow').click(function() {
 		$('html, body').animate({
         	scrollTop: $("#projectWrapper").offset().top
     	}, 750);
 	});	
-});
 
+	//image gallery
+	var images = new Array();
+	var gallery;
 
-//image gallery
+	images[0] = "img/leaguestatsone";
+	images[1] = "img/leaguestatstwo";
+	images[3] = "img/spacelichone";
+	images[4] = "img/spacelichtwo";
+	images[5] = "img/spacelichthree";
+	images[6] = "img/imgurgalleryone";
+	images[7] = "img/imgurgallerytwo";
 
-var images = new Array();
-var gallery;
-
-images[0] = "img/leaguestatsone";
-images[1] = "img/leaguestatstwo";
-images[3] = "img/spacelichone";
-images[4] = "img/spacelichtwo";
-images[5] = "img/spacelichthree";
-images[6] = "img/imgurgalleryone";
-images[7] = "img/imgurgallerytwo";
-
-$(document).ready(function() {
 	var galleryClickActive = false;
 	$('.galleryChoice').click(function() {
 		if (galleryClickActive == true) {
 			return;
 		}
 		galleryClickActive = true;
-		//switches active button
+	
+		//switches active button styles
 		var galleryIndex = $(this).attr('value');
 		$(this).siblings().removeClass('default');
 		$(this).addClass('default');
@@ -45,15 +43,15 @@ $(document).ready(function() {
 			window.setTimeout(function() {galleryClickActive = false}, 400);
 		}
 	})
-});
 
-//lightbox
-$('.gallery').click(function() {
-	$('#projectLightbox').fadeIn('fast');
-	var	lightboxImage = $(this).attr('value');
-	$('#projectLightboxImage').attr('src', lightboxImage);
-});
+	//lightbox
+	$('.gallery').click(function() {
+		$('#projectLightbox').fadeIn('fast');
+		var	lightboxImage = $(this).attr('value');
+		$('#projectLightboxImage').attr('src', lightboxImage);
+	});
 
-$('#projectLightbox').click(function() {
-	$('#projectLightbox').hide();
+	$('#projectLightbox').click(function() {
+		$('#projectLightbox').hide();
+	});
 });
