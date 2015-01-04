@@ -352,6 +352,24 @@ footer a {
     }
 }
 
+@media only screen and (max-width: 750px) {
+    #introName {
+        font-size: 4rem;
+        margin-top: 0%;
+        margin-bottom: -5%;
+    }
+    #introInfo {
+        font-size: 1.75rem;
+        margin-bottom: -1.5%;
+    }
+    .introAnchor {
+        font-size: 2.5rem;
+    }
+    #introDownArrow {
+        font-size: 2.5rem;
+    }
+}
+
 
 @media only screen and (max-width: 550px) {
     #introName {
