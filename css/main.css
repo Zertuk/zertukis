@@ -354,6 +354,22 @@ footer a {
 
 
 @media only screen and (max-width: 550px) {
+    #introName {
+        font-size: 4rem;
+        margin-top: 0%;
+    }
+    #introInfo {
+        font-size: 1.5rem;
+    }
+    .introAnchor {
+        font-size: 3rem;
+    }
+    #introDownArrow {
+        font-size: 3rem;
+    }
+    .projectHeader {
+        font-size: 2rem;
+    }
     .galleryAnchorWrap {
         display: inline-block;
     }
@@ -361,7 +377,7 @@ footer a {
         text-align: center;
     }
     .projectTech {
-        font-size: 1rem;
+        font-size: 0.95rem;
     }
     .projectTextParagraph {
         margin-top: 10%;
