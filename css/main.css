@@ -355,7 +355,7 @@ footer a {
 @media only screen and (max-width: 750px) {
     #introName {
         font-size: 4rem;
-        margin-top: 0%;
+        margin-top: -5%;
         margin-bottom: -5%;
     }
     #introInfo {
