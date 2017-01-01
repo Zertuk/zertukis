@@ -121,6 +121,10 @@ button {
     border-radius: 5px;
 }
 
+.gallery {
+    cursor: pointer;
+}
+
 .galleryAnchorButton {
     width: 100px;
     margin-left: 7px;
