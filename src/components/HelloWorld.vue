@@ -1,5 +1,8 @@
 <template>
-  <div>test</div>
+  <div>
+    <h1>Justin Forcier</h1>
+    <h2>Software Engineer</h2>
+  </div>
 </template>
 
 <script lang="ts">
