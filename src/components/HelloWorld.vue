@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <div class="max-site-width">
     <h1>Justin Forcier</h1>
-    <h2>Software Engineer</h2>
+    <h2>Software Engineer, Indie Game Developer, Pixel Artist</h2>
   </div>
 </template>
 
@@ -19,6 +19,11 @@ export default class HelloWorld extends Vue {
 h3 {
   margin: 40px 0 0;
 }
+h1, h2 {
+  text-align: left;
+  margin-left: 10px;
+}
+
 ul {
   list-style-type: none;
   padding: 0;

@@ -1,7 +1,21 @@
 <template>
   <div class="project">
-      <span>{{project.name}}</span>
-      <img :src="getImageSrc()">
+      <span>
+        <h2>{{project.name}}</h2>
+      </span>
+      <img :src="getImageSrc('png')">
+      <img class="show-hover" :src="getImageSrc('gif')">
+      <div class="show-hover project-info">
+        <p>{{project.desc}}</p>
+        <div class="project-links">
+          <a :href="project.href" target="_blank" rel="noopenner" title="View Project">
+            <i class="material-icons">link</i>
+          </a>
+          <a v-if="project.sourcehref" :href="project.sourcehref" target="_blank" rel="noopenner" title="View Source Code">
+            <i class="material-icons">code</i>
+          </a>
+        </div>
+      </div>
   </div>
 </template>
 
@@ -13,8 +27,8 @@ import { ProjectModel } from '../models/ProjectModel';
 export default class Project extends Vue {
   @Prop() private project: ProjectModel;
 
-  getImageSrc() {
-    return require('../assets/' + this.project.img);
+  getImageSrc(type: string) {
+    return require('../assets/' + this.project.img + '.' + type);
   }
 }
 </script>
@@ -24,10 +38,74 @@ export default class Project extends Vue {
   .project {
     width: 50%;
     display: inline-block;
-    height: 400px;
+    position: relative;
+
+    &:hover {
+      img {
+        display: none;
+      }
+      .show-hover {
+        display: flex;
+      }
+      span {
+        opacity: 0;
+        pointer-events: none;
+      }
+    }
   }
 
   img {
     width: 100%;
+    display: block;
   }
+
+  .show-hover {
+    display: none;
+  }
+
+  span {
+    background: rgba(44, 62, 80, 0.5);
+    width: 100%;
+    font-size: 40px;
+    color: #f2f2f0;
+    position: absolute;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease;
+  }
+
+  .project-info {
+    background: rgba(44, 62, 80, 0.80);
+    position: absolute;
+    top: -50px;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    border: 2px solid #f2f2f0;
+    border-bottom: none;
+    p {
+      width: 75%;
+      display: inline-block;
+      color: #f2f2f0;
+      text-align: left;
+      font-size: 18px;
+      margin-top: 2px;
+      margin-bottom: 0;
+    }
+  }
+
+  .project-links {
+    flex-grow: 1;
+    justify-content: flex-end;
+    display: flex;
+  }
+
+  a {
+    color: #f2f2f0;
+    margin: 0 5px;
+  }
+
 </style>

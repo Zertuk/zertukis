@@ -1,6 +1,8 @@
 <template>
   <header>
-    <Link :data="link" v-for="(link, index) in links" :key="index"/>
+  <div class="max-site-width">
+           <Link :data="link" v-for="(link, index) in links" :key="index"/>
+      </div>
   </header>
 </template>
 
@@ -46,4 +48,8 @@ export default class Header extends Vue {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+    header {
+        padding: 20px 0;
+        text-align: left;
+    }
 </style>
