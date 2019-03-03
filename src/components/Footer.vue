@@ -1,18 +1,16 @@
 <template>
   <footer>
-    <div class="max-site-width">
-        FOOTER HERE
-    </div>
+    <SocialMediaLinks/>
   </footer>
 </template>
 
 <script lang="ts">
 import { Component, Prop, Vue } from 'vue-property-decorator';
-import Link from './Link.vue';
+import SocialMediaLinks from './SocialMediaLinks.vue';
 
 @Component({
   components: {
-    Link
+    SocialMediaLinks
   }
 })
 
@@ -23,6 +21,7 @@ export default class Footer extends Vue {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
     footer {
+        margin-top: 60px;
         padding: 20px 0;
         text-align: left;
     }

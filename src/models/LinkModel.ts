@@ -1,4 +1,6 @@
 export interface LinkModel {
     name: string;
-    link: string;
+    href: string;
+    target: string;
+    isIcon: boolean;
 }

@@ -16,12 +16,20 @@ export default class HelloWorld extends Vue {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+@import "../variables.scss";
+
 h3 {
   margin: 40px 0 0;
 }
 h1, h2 {
   text-align: left;
-  margin-left: 10px;
+  margin-left: 20px;
+  color: $accent-color;
+}
+@media (min-width: $max-width) {
+    h1, h2 {
+        margin-left: 0;
+    }
 }
 
 ul {

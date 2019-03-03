@@ -5,7 +5,7 @@
       </span>
       <img :src="getImageSrc('png')">
       <img class="show-hover" :src="getImageSrc('gif')">
-      <div class="show-hover project-info">
+      <div class="show-hover project-info" v-bind:class="{ 'project-info-bottom': project.bottom }">
         <p>{{project.desc}}</p>
         <div class="project-links">
           <a :href="project.href" target="_blank" rel="noopenner" title="View Project">
@@ -79,13 +79,11 @@ export default class Project extends Vue {
   .project-info {
     background: rgba(44, 62, 80, 0.80);
     position: absolute;
-    top: -50px;
     left: 0;
     width: 100%;
     padding: 10px;
     font-size: 20px;
     border: 2px solid #f2f2f0;
-    border-bottom: none;
     p {
       width: 75%;
       display: inline-block;
@@ -95,6 +93,16 @@ export default class Project extends Vue {
       margin-top: 2px;
       margin-bottom: 0;
     }
+  }
+
+  .project-info:not(.project-info-bottom) {
+    top: -50px;
+    border-bottom: none;
+  }
+
+  .project-info-bottom {
+    bottom: -50px;
+    border-top: none;
   }
 
   .project-links {
@@ -107,5 +115,12 @@ export default class Project extends Vue {
     color: #f2f2f0;
     margin: 0 5px;
   }
+  
+  a:hover {
+    color: #f3d040;
+  }
 
+  h2 {
+    max-width: 500px;
+  }
 </style>

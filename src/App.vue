@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" class="app">
     <Header/>
     <HelloWorld/>
     <div class="projects max-site-width">
@@ -33,21 +33,24 @@ export default class App extends Vue {
       desc: 'Spooky Ghosts Dot Com | GDScript'
     }, 
     {
+      name: 'Thirsty Frog',
+      img: 'thirsty-frog',
+      desc: 'Thirsty Frog | In Development | GDScript'
+    },
+    {
       name: 'Space Lich Omega 2',
       img: 'slotwo',
       href: 'https://www.spacelichomega2.com',
       sourcehref: 'https://github.com/Zertuk/slotwo',
-      desc: 'Space Lich Omega 2 | AngularJS'
+      desc: 'Space Lich Omega 2 | AngularJS',
+      bottom: true
     },
     {
-      name: 'test',
-      img: 'spooky-ghosts-witch',
-      href: 'https://store.steampowered.com/app/820620/Spooky_Ghosts_Dot_Com/'
-    }, 
-    {
-      name: 'test2',
-      img: 'spooky-ghosts-witch',
-      href: 'https://store.steampowered.com/app/820620/Spooky_Ghosts_Dot_Com/'
+      name: 'Candy Trail',
+      img: 'candy-trail',
+      href: 'https://zertuk.itch.io/candy-trail',
+      desc: 'Candy Trail | Devtober Game Jam | GDScript',
+      bottom: true
     }
   ];
 
@@ -56,6 +59,8 @@ export default class App extends Vue {
 
 <style lang="scss">
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url('https://fonts.googleapis.com/css?family=Rubik');
+@import "./variables.scss";
 
 * {
   box-sizing: Border-box 
@@ -66,10 +71,13 @@ body {
   margin: 0;
 }
 
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.max-site-width {
+  max-width: $max-width;
+  margin: 0 auto;
+}
+
+.app {
+  font-family: 'Rubik', sans-serif;
   text-align: center;
   color: #2c3e50;
 }
@@ -79,12 +87,5 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
-
-.max-site-width {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-
 
 </style>
