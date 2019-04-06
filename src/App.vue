@@ -21,7 +21,7 @@ import Footer from './components/Footer.vue';
     Header,
     HelloWorld,
     Project,
-    Footer
+    Footer,
   },
 })
 export default class App extends Vue {
@@ -30,12 +30,13 @@ export default class App extends Vue {
       name: 'Spooky Ghosts Dot Com',
       img: 'spooky-ghosts-witch',
       href: 'https://store.steampowered.com/app/820620/Spooky_Ghosts_Dot_Com/',
-      desc: 'Spooky Ghosts Dot Com | GDScript'
-    }, 
+      desc: 'Spooky Ghosts Dot Com | GDScript',
+    },
     {
       name: 'Thirsty Frog',
       img: 'thirsty-frog',
-      desc: 'Thirsty Frog | In Development | GDScript'
+      href: 'https://www.grizzlywizard.com/thirsty-frog/',
+      desc: 'Thirsty Frog | In Development | GDScript',
     },
     {
       name: 'Space Lich Omega 2',
@@ -43,17 +44,16 @@ export default class App extends Vue {
       href: 'https://www.spacelichomega2.com',
       sourcehref: 'https://github.com/Zertuk/slotwo',
       desc: 'Space Lich Omega 2 | AngularJS',
-      bottom: true
+      bottom: true,
     },
     {
       name: 'Candy Trail',
       img: 'candy-trail',
       href: 'https://zertuk.itch.io/candy-trail',
       desc: 'Candy Trail | Devtober Game Jam | GDScript',
-      bottom: true
-    }
+      bottom: true,
+    },
   ];
-
 }
 </script>
 
@@ -83,7 +83,7 @@ body {
 }
 
 .projects {
-  margin-top: 60px;
+  margin-top: 80px;
   display: flex;
   flex-wrap: wrap;
 }

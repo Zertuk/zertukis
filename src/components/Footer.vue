@@ -10,8 +10,8 @@ import SocialMediaLinks from './SocialMediaLinks.vue';
 
 @Component({
   components: {
-    SocialMediaLinks
-  }
+    SocialMediaLinks,
+  },
 })
 
 export default class Footer extends Vue {

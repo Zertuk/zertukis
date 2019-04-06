@@ -11,7 +11,7 @@ import { LinkModel } from '../models/LinkModel';
 
 @Component
 export default class Link extends Vue {
-     @Prop() private data: LinkModel;
+     @Prop() private data!: LinkModel;
 }
 </script>
 
@@ -20,6 +20,7 @@ export default class Link extends Vue {
     @import "../variables.scss";
 
     a {
+        display: inline-block;
         font-weight: bold;
         color: #f2f2f0;
         margin-left: 20px;
@@ -52,4 +53,5 @@ export default class Link extends Vue {
         width: 100%;
         left: 2px;
     }
+
 </style>

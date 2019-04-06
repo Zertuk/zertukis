@@ -25,9 +25,9 @@ import { ProjectModel } from '../models/ProjectModel';
 
 @Component
 export default class Project extends Vue {
-  @Prop() private project: ProjectModel;
+  @Prop() private project!: ProjectModel;
 
-  getImageSrc(type: string) {
+  public getImageSrc(type: string) {
     return require('../assets/' + this.project.img + '.' + type);
   }
 }
@@ -35,6 +35,19 @@ export default class Project extends Vue {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+  h2 {
+    max-width: 90%;
+  }
+
+  @media (max-width: 1017px) {
+    .project-info p {
+        font-size: 14px;
+    }
+    h2 {
+      font-size: 44px;
+    }
+  }
+
   .project {
     width: 50%;
     display: inline-block;
@@ -46,11 +59,21 @@ export default class Project extends Vue {
       }
       .show-hover {
         display: flex;
+        align-items: center;
       }
       span {
         opacity: 0;
         pointer-events: none;
       }
+    }
+  }
+
+  @media (max-width: 600px) {
+    h2 {
+      font-size: 30px;
+    }
+    .project {
+      width: 100%;
     }
   }
 
@@ -77,6 +100,8 @@ export default class Project extends Vue {
   }
 
   .project-info {
+    z-index: 1;
+    height: 67px;
     background: rgba(44, 62, 80, 0.80);
     position: absolute;
     left: 0;
@@ -96,13 +121,20 @@ export default class Project extends Vue {
   }
 
   .project-info:not(.project-info-bottom) {
-    top: -50px;
+    top: -67px;
     border-bottom: none;
   }
 
   .project-info-bottom {
-    bottom: -50px;
+    bottom: -67px;
     border-top: none;
+  }
+
+  @media (min-width: 1017px) {
+    h2 {
+      max-width: 500px;
+      font-size: 60px;
+    }
   }
 
   .project-links {
@@ -118,9 +150,5 @@ export default class Project extends Vue {
   
   a:hover {
     color: #f3d040;
-  }
-
-  h2 {
-    max-width: 500px;
   }
 </style>
