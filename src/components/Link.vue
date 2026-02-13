@@ -22,7 +22,7 @@ export default class Link extends Vue {
     a {
         display: inline-block;
         font-weight: bold;
-        color: #f2f2f0;
+        color: #7d3c5a;
         margin-left: 20px;
         font-size: 22px;
         position: relative;

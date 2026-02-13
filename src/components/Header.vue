@@ -23,5 +23,7 @@ export default class Header extends Vue {
     header {
         padding: 20px 0;
         text-align: left;
+        background-color: #eccccf;
+        border-bottom: 2px dashed #7d3c5a;
     }
 </style>

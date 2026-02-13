@@ -17,13 +17,8 @@ import Link from './Link.vue';
 export default class SocialMediaLinks extends Vue {
     public links = [
         {
-            href: 'https://twitter.com/Zertuk',
-            name: 'Twitter',
-            target: '_blank',
-        },
-        {
-            href: 'https://github.com/Zertuk',
-            name: 'Github',
+            href: 'https://bsky.app/profile/zertuk.bsky.social',
+            name: 'Bluesky',
             target: '_blank',
         },
         {
@@ -37,17 +32,17 @@ export default class SocialMediaLinks extends Vue {
             target: '_blank',
         },
         {
-            href: 'https://store.steampowered.com/curator/33315881',
+            href: 'https://store.steampowered.com/curator/39903196',
             name: 'Steam',
             target: '_blank',
         },
         {
-            href: 'https://www.grizzlywizard.com/',
-            name: 'Grizzly Wizard',
+            href: 'https://github.com/Zertuk',
+            name: 'Github',
             target: '_blank',
         },
         {
-            href: 'mailto:just.forcier@gmail.com',
+            href: 'mailto:nora.j.forcier@gmail.com',
             name: '<i class="material-icons">email</i>',
             isIcon: true,
             target: '_self',

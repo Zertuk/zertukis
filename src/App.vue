@@ -27,30 +27,30 @@ import Footer from './components/Footer.vue';
 export default class App extends Vue {
   public projects: any[] = [
     {
+      name: 'Apples Busy Day',
+      img: 'apple',
+      href: 'https://store.steampowered.com/app/2980280/Apples_Busy_Day',
+      desc: 'Apples Busy Day | Godot',
+    },
+    {
+      name: 'SJ-19 Learns to Love!',
+      img: 'sj-19',
+      href: 'https://store.steampowered.com/app/1441670/SJ19_Learns_To_Love/',
+      desc: 'SJ-19 Learns to Love! | Godot',
+    },
+    {
       name: 'Spooky Ghosts Dot Com',
       img: 'spooky-ghosts-witch',
       href: 'https://store.steampowered.com/app/820620/Spooky_Ghosts_Dot_Com/',
-      desc: 'Spooky Ghosts Dot Com | GDScript',
-    },
-    {
-      name: 'Thirsty Frog',
-      img: 'thirsty-frog',
-      href: 'https://www.grizzlywizard.com/thirsty-frog/',
-      desc: 'Thirsty Frog | In Development | GDScript',
+      desc: 'Spooky Ghosts Dot Com | Godot',
+      bottom: true,
     },
     {
       name: 'Space Lich Omega 2',
       img: 'slotwo',
-      href: 'https://www.spacelichomega2.com',
+      href: 'https://slo2.zertukis.com',
       sourcehref: 'https://github.com/Zertuk/slotwo',
       desc: 'Space Lich Omega 2 | AngularJS',
-      bottom: true,
-    },
-    {
-      name: 'Candy Trail',
-      img: 'candy-trail',
-      href: 'https://zertuk.itch.io/candy-trail',
-      desc: 'Candy Trail | Devtober Game Jam | GDScript',
       bottom: true,
     },
   ];
@@ -67,7 +67,7 @@ export default class App extends Vue {
 }
 
 body {
-  background: #f3d040;
+  background: #f8d7da;
   margin: 0;
 }
 

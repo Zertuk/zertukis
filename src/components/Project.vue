@@ -1,5 +1,5 @@
 <template>
-  <div class="project">
+  <a class="project" :href="project.href" target="_blank" rel="noopener">
       <span>
         <h2>{{project.name}}</h2>
       </span>
@@ -16,7 +16,7 @@
           </a>
         </div>
       </div>
-  </div>
+  </a>
 </template>
 
 <script lang="ts">
@@ -48,12 +48,16 @@ export default class Project extends Vue {
     }
   }
 
-  .project {
+  a.project {
     width: 50%;
     display: inline-block;
     position: relative;
+    background-color: #7d3c5a;
+    text-decoration: none;
+    vertical-align: top;
 
-    &:hover {
+    &:hover,
+    &:focus {
       img {
         display: none;
       }
@@ -102,17 +106,17 @@ export default class Project extends Vue {
   .project-info {
     z-index: 1;
     height: 67px;
-    background: rgba(44, 62, 80, 0.80);
+    background: #eccccf;
     position: absolute;
     left: 0;
     width: 100%;
     padding: 10px;
     font-size: 20px;
-    border: 2px solid #f2f2f0;
+    border: 2px solid #7d3c5a;
     p {
       width: 75%;
       display: inline-block;
-      color: #f2f2f0;
+      color: #7d3c5a;
       text-align: left;
       font-size: 18px;
       margin-top: 2px;
@@ -143,12 +147,12 @@ export default class Project extends Vue {
     display: flex;
   }
 
-  a {
-    color: #f2f2f0;
+  .project-links a {
+    color: #7d3c5a;
     margin: 0 5px;
   }
-  
-  a:hover {
+
+  .project-links a:hover {
     color: #f3d040;
   }
 </style>

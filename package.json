@@ -10,28 +10,24 @@
   "dependencies": {
     "gifffer": "^1.5.3",
     "normalize.css": "^8.0.1",
-    "vue": "^2.5.22",
-    "vue-class-component": "^6.0.0",
-    "vue-property-decorator": "^7.0.0"
+    "vue": "^2.7.16",
+    "vue-class-component": "^7.2.6",
+    "vue-property-decorator": "^9.1.2"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.4.0",
-    "@vue/cli-plugin-typescript": "^3.4.0",
-    "@vue/cli-service": "^3.4.0",
-    "fibers": "^3.1.1",
-    "sass": "^1.16.0",
-    "sass-loader": "^7.1.0",
-    "typescript": "^3.0.0",
-    "vue-template-compiler": "^2.5.21"
-  },
-  "postcss": {
-    "plugins": {
-      "autoprefixer": {}
-    }
+    "@babel/core": "^7.24.0",
+    "@babel/eslint-parser": "^7.24.0",
+    "@vue/cli-plugin-babel": "^5.0.8",
+    "@vue/cli-plugin-typescript": "^5.0.8",
+    "@vue/cli-service": "^5.0.8",
+    "sass": "^1.71.0",
+    "sass-loader": "^13.3.0",
+    "typescript": "^4.9.5",
+    "vue-template-compiler": "^2.7.16"
   },
   "browserslist": [
     "> 1%",
     "last 2 versions",
-    "not ie <= 8"
+    "not dead"
   ]
 }

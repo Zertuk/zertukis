@@ -1,7 +1,7 @@
 <template>
   <div class="max-site-width">
-    <h1>Justin Forcier</h1>
-    <h2>Software Engineer, Indie Game Developer, Pixel Artist</h2>
+    <h1>Nora Forcier 🐈</h1>
+    <h2>Game Dev & Artist</h2>
   </div>
 </template>
 
